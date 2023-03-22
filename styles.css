@@ -1,0 +1,60 @@
+*{
+    font-family: 'Franklin Gothic Medium', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color:darkslategrey;
+}
+
+h1{
+    padding-top: 20px;
+    text-align: center; 
+    color: rgba(235, 255, 255, .8);
+}
+
+.screen{
+    border-bottom: 1px solid darkslategrey;
+    grid-column: -1/1;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: flex-end;
+    border-radius: 30px;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.screen .inout{
+    color: white;
+    font-size: 2rem;
+}
+
+.btnGrid{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 60vh;
+    grid-template-rows: minmax(80px, auto) repeat(5, 80px);
+    grid-template-columns: repeat(4, 80px);
+}
+
+.btnGrid > button{
+    border: 0.5px solid darkslategrey;
+    cursor: pointer;
+    font-size: 20px;
+    background-color:#b7d0d0;
+}
+
+.btnGrid > .singleBtn{
+    border-radius: 50%;
+}
+
+.btnGrid > .doubleBtn{
+    grid-column: span 2;
+    border-radius: 40px;
+}
+
+.btnGrid > button:hover{
+    background-color:rgba(235, 255, 255, .9);
+}
+
